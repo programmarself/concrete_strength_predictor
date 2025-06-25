@@ -2,6 +2,8 @@
 
 This is a simple web application that predicts the compressive strength of concrete based on its mix components. It is built using Python, Machine Learning, and Streamlit.
 
+![concrete_strength_predictor](https://github.com/user-attachments/assets/2c09cf0b-e442-407f-8c29-45ed4865f2d1)
+
 ## 📊 Project Purpose
 The app allows users to input concrete mix details such as:
 - Cement
@@ -47,3 +49,15 @@ streamlit run concrete_strength_app.py
 
 ## 📚 Dataset Source
 [Concrete Compressive Strength Data Set](https://www.kaggle.com/datasets/dsrivastava2020/concretecsv)
+
+-------------------------------------------------------------------------------------------------------------------
+
+<h2 style="font-family: 'poppins'; font-weight: bold; color: Green;">👨💻 By: Irfan Ullah Khan</h2>
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?style=for-the-badge&logo=github)](https://github.com/programmarself) 
+[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?style=for-the-badge&logo=kaggle)](https://www.kaggle.com/programmarself) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/irfan-ullah-khan-4a2871208/)  
+
+[![YouTube](https://img.shields.io/badge/YouTube-Profile-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@irfanullahkhan7748) 
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=email)](mailto:programmarself@gmail.com)
+[![Website](https://img.shields.io/badge/Website-Contact%20Me-red?style=for-the-badge&logo=website)]([https://programmarself.github.io/My_Portfolio/(https://programmarself.github.io/My_Portfolio/))
