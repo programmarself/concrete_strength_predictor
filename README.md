@@ -22,7 +22,7 @@ It predicts the **compressive strength of the concrete (MPa)** using a machine l
 - Public dataset from UCI Machine Learning Repository
 
 ## 🚀 Live Demo
-👉 [Launch the App](https://yourusername-concrete-strength-predictor.streamlit.app/)
+👉 [Launch the App](https://concretestrengthpredictors.streamlit.app/)
 
 ## ⚙️ Technologies Used
 - Python
@@ -46,4 +46,4 @@ streamlit run concrete_strength_app.py
 ```
 
 ## 📚 Dataset Source
-[Concrete Compressive Strength Data Set (UCI)](https://archive.ics.uci.edu/ml/datasets/Concrete+Compressive+Strength)
+[Concrete Compressive Strength Data Set](https://www.kaggle.com/datasets/dsrivastava2020/concretecsv)
