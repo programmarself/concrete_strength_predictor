@@ -4,11 +4,12 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
+# Load dataset
 @st.cache_data
 def load_data():
-    url = "https://archive.ics.uci.edu/ml/machine-learning-databases/concrete/compressive/Concrete_Data.xls"
-    data = pd.read_excel(url)
+    data = pd.read_csv('concrete.csv')  # Reading from local file in the repo
     return data
+
 
 data = load_data()
 
