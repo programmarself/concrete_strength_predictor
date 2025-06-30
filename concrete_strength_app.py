@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 
 st.set_page_config(
     page_title="Concrete Strength Predictor",
@@ -7,51 +6,17 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown("""
-    <style>
-    body {
-        background-image: url('https://cdn.pixabay.com/photo/2017/01/14/12/59/construction-1975174_1280.jpg');
-        background-size: cover;
-    }
-    .stApp {
-        background-color: rgba(255, 255, 255, 0.95);
-        padding: 20px;
-        border-radius: 15px;
-    }
-    .nav-container {
-        margin-bottom: 30px;
-    }
-    .stButton > button {
-        background-color: #FF7F50;
-        color: white;
-        border-radius: 12px;
-        transition: transform 0.2s, background-color 0.3s;
-    }
-    .stButton > button:hover {
-        background-color: #FF4500;
-        transform: scale(1.05);
-    }
-    </style>
-""", unsafe_allow_html=True)
+st.sidebar.title("Navigation")
+selection = st.sidebar.radio("Go to:", ["Home", "Predict Strength", "About"])
 
-# Sidebar Navigation
-with st.sidebar:
-    selected = option_menu(
-        menu_title="Navigation",
-        options=["Home", "Predict Strength", "About"],
-        icons=["house", "calculator", "info-circle"],
-        menu_icon="cast",
-        default_index=0
-    )
-
-if selected == "Home":
+if selection == "Home":
     st.image("https://cdn.pixabay.com/photo/2017/01/14/12/59/construction-1975174_1280.jpg", use_column_width=True)
     st.title("🏗️ Concrete Strength Predictor")
     st.markdown("### 👷 A Machine Learning Powered Tool for Civil Engineers")
-    st.markdown("#### 🎯 This web application predicts the **compressive strength of concrete** based on the input mix proportions.")
-    st.image("https://cdn.pixabay.com/photo/2016/11/22/07/09/cement-1846312_1280.jpg", use_column_width=True, caption="Precision Concrete Prediction")
+    st.markdown("#### 🎯 Predict the **compressive strength of concrete** using input mix proportions.")
+    st.image("https://cdn.pixabay.com/photo/2016/11/22/07/09/cement-1846312_1280.jpg", use_column_width=True, caption="Civil Engineering in Action")
 
-elif selected == "Predict Strength":
+elif selection == "Predict Strength":
     import pandas as pd
     import numpy as np
     from sklearn.linear_model import LinearRegression
@@ -100,7 +65,7 @@ elif selected == "Predict Strength":
             </style>
         """, unsafe_allow_html=True)
 
-elif selected == "About":
+elif selection == "About":
     st.title("ℹ️ About This App")
     st.image("https://cdn.pixabay.com/photo/2017/01/20/00/30/civil-engineer-1995857_1280.jpg", use_column_width=True)
     st.markdown("""
