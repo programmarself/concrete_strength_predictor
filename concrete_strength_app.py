@@ -148,7 +148,7 @@ st.markdown("""
         <a href="https://github.com/programmarself" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/iukhan/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://programmarself.github.io/My_Portfolio/" target="_blank" title="Portfolio"><i class="fa fa-briefcase"></i></a>
-        <a href="mailto:your-email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:programmarself@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
 """, unsafe_allow_html=True)
