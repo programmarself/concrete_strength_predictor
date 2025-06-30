@@ -11,8 +11,9 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS for responsiveness and style
+# Load Font Awesome
 st.markdown("""
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
     body {
         background-color: #f0f2f6;
@@ -63,22 +64,16 @@ st.markdown("""
         from {opacity: 0;}
         to {opacity: 1;}
     }
-        .footer {
-        text-align: center;
-        padding: 20px;
-        margin-top: 30px;
-        color: var(--dark);
-    }
     .social-icons a {
-        color: var(--dark);
         margin: 0 10px;
+        color: #000;
         font-size: 24px;
-        transition: color 0.3s;
+        transition: color 0.3s, transform 0.3s;
     }
     .social-icons a:hover {
-        color: var(--primary);
+        color: #FF4500;
+        transform: scale(1.2);
     }
-
     /* Mobile adjustments */
     @media only screen and (max-width: 768px) {
         .header {
@@ -143,18 +138,17 @@ if st.button('🚀 Predict Strength'):
         </div>
     """, unsafe_allow_html=True)
 
-
-# Footer
+# Footer with Font Awesome icons
 st.markdown("---")
 st.markdown("""
-    <div class='footer'>
-        <p>&copy; 2025 Concrete Strength Predictor | All rights reserved</p>
-        <p><strong>Developed with ❤️ by Irfan Ullah Khan</strong></p>
-        <div class="social-icons">
-            <a href="https://github.com/programmarself" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/iukhan/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://programmarself.github.io/My_Portfolio/" target="_blank" title="Portfolio"><i class="fa fa-briefcase"></i></a>
-            <a href="mailto:your-email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
+    <div style='text-align: center; font-size: 16px;'>
+      <p>&copy; 2025 Concrete Strength Predictor | All rights reserved</p>
+      <p><strong>Developed with ❤️ by Irfan Ullah Khan</strong></p>
+      <div class='social-icons'>
+        <a href="https://github.com/programmarself" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/iukhan/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://programmarself.github.io/My_Portfolio/" target="_blank" title="Portfolio"><i class="fa fa-briefcase"></i></a>
+        <a href="mailto:your-email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
 """, unsafe_allow_html=True)
