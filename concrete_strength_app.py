@@ -133,13 +133,13 @@ st.markdown("""
       <p>&copy; 2025 Concrete Strength Predictor | All rights reserved</p>
       <p><strong>Developed with ❤️ by Irfan Ullah Khan</strong></p>
       <p>
-        <a href="https://github.com/programmarself" target="_blank" style="text-decoration: none; color: #000;">
+        <a href="https://github.com/programmarself" target="_blank" style="text-decoration: none; color: #1E90FF;">
             GitHub 🔗
         </a> | 
-        <a href="https://www.linkedin.com/in/iukhan/" target="_blank" style="text-decoration: none; color: #000;">
+        <a href="https://www.linkedin.com/in/iukhan/" target="_blank" style="text-decoration: none; color: #1E90FF;">
             LinkedIn 🔗
         </a> | 
-        <a href="https://programmarself.github.io/My_Portfolio/" target="_blank" style="text-decoration: none; color: #000;">
+        <a href="https://programmarself.github.io/My_Portfolio/" target="_blank" style="text-decoration: none; color: #1E90FF;">
             Portfolio 🔗
         </a>
       </p>
