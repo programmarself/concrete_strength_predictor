@@ -66,7 +66,7 @@ st.markdown("""
     }
     .social-icons a {
         margin: 0 10px;
-        color: #000;
+        color: #1E90FF;
         font-size: 24px;
         transition: color 0.3s, transform 0.3s;
     }
