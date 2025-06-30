@@ -147,7 +147,7 @@ if st.button('🚀 Predict Strength'):
 # Footer
 st.markdown("---")
 st.markdown("""
-    <div style='text-align: center; font-size: 16px;'>
+    <div class='footer'>
         <p>&copy; 2025 Concrete Strength Predictor | All rights reserved</p>
         <p><strong>Developed with ❤️ by Irfan Ullah Khan</strong></p>
         <div class="social-icons">
