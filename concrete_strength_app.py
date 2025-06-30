@@ -63,6 +63,22 @@ st.markdown("""
         from {opacity: 0;}
         to {opacity: 1;}
     }
+        .footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+        color: var(--dark);
+    }
+    .social-icons a {
+        color: var(--dark);
+        margin: 0 10px;
+        font-size: 24px;
+        transition: color 0.3s;
+    }
+    .social-icons a:hover {
+        color: var(--primary);
+    }
+
     /* Mobile adjustments */
     @media only screen and (max-width: 768px) {
         .header {
