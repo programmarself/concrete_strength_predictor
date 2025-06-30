@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS for mobile responsiveness
+# Custom CSS for responsiveness and style
 st.markdown("""
     <style>
     body {
@@ -57,6 +57,7 @@ st.markdown("""
         box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
         animation: fadeIn 1s;
         margin-top: 30px;
+        color: #1E90FF; /* Font color: Dodger Blue */
     }
     @keyframes fadeIn {
         from {opacity: 0;}
@@ -103,7 +104,7 @@ st.image("https://cdn.pixabay.com/photo/2016/11/22/07/09/cement-1846312_1280.jpg
 
 st.markdown("### 📋 Enter Concrete Mix Details:")
 
-# Input Fields inside a container for responsiveness
+# Input Fields inside a container
 with st.container():
     cement = st.number_input('🧱 Cement (kg/m³)', min_value=0.0, max_value=1000.0, value=540.0)
     slag = st.number_input('⛏️ Blast Furnace Slag (kg/m³)', min_value=0.0, max_value=400.0, value=0.0)
@@ -128,11 +129,19 @@ if st.button('🚀 Predict Strength'):
 # Footer
 st.markdown("---")
 st.markdown("""
-     <div style='text-align: center; font-size: 16px;'>
+    <div style='text-align: center; font-size: 16px;'>
       <p>&copy; 2025 Concrete Strength Predictor | All rights reserved</p>
       <p><strong>Developed with ❤️ by Irfan Ullah Khan</strong></p>
-       <a href="https://github.com/programmarself" target="_blank"><i class="fab fa-github"></i></a>
-       <a href="https://www.linkedin.com/in/iukhan/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://programmarself.github.io/My_Portfolio/" target="_blank"><i class="fa fa-briefcase"></i></a>
+      <p>
+        <a href="https://github.com/programmarself" target="_blank" style="text-decoration: none; color: #000;">
+            GitHub 🔗
+        </a> | 
+        <a href="https://www.linkedin.com/in/iukhan/" target="_blank" style="text-decoration: none; color: #000;">
+            LinkedIn 🔗
+        </a> | 
+        <a href="https://programmarself.github.io/My_Portfolio/" target="_blank" style="text-decoration: none; color: #000;">
+            Portfolio 🔗
+        </a>
+      </p>
     </div>
 """, unsafe_allow_html=True)
