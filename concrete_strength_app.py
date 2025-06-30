@@ -99,7 +99,7 @@ model = train_model(data)
 st.markdown("<h1 class='header'>🏗️ Concrete Strength Predictor</h1>", unsafe_allow_html=True)
 st.markdown("<div class='description'>👷 A Machine Learning Tool for Civil Engineers to Predict Compressive Strength of Concrete</div>", unsafe_allow_html=True)
 
-st.image("https://cdn.pixabay.com/photo/2016/11/22/07/09/cement-1846312_1280.jpg", use_column_width=True, caption="Civil Engineering in Action")
+st.image("https://cdn.pixabay.com/photo/2016/11/22/07/09/cement-1846312_1280.jpg", use_container_width=True, caption="Civil Engineering in Action")
 
 st.markdown("### 📋 Enter Concrete Mix Details:")
 
