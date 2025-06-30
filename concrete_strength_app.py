@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Custom CSS Styling
+# Custom CSS for mobile responsiveness
 st.markdown("""
     <style>
     body {
@@ -21,17 +21,20 @@ st.markdown("""
         background-image: url('https://cdn.pixabay.com/photo/2017/01/14/12/59/construction-1975174_1280.jpg');
         background-size: cover;
         background-attachment: fixed;
+        padding: 10px;
     }
     .header {
         text-align: center;
-        padding: 20px;
+        padding: 20px 10px;
         color: #FF7F50;
         font-family: 'Arial Black', sans-serif;
+        font-size: 36px;
     }
     .description {
         text-align: center;
         font-size: 18px;
         margin-bottom: 30px;
+        padding: 0 10px;
     }
     .stButton > button {
         background-color: #FF7F50;
@@ -40,6 +43,7 @@ st.markdown("""
         padding: 10px 20px;
         font-size: 18px;
         transition: transform 0.2s, background-color 0.3s;
+        width: 100%;
     }
     .stButton > button:hover {
         background-color: #FF4500;
@@ -57,6 +61,19 @@ st.markdown("""
     @keyframes fadeIn {
         from {opacity: 0;}
         to {opacity: 1;}
+    }
+    /* Mobile adjustments */
+    @media only screen and (max-width: 768px) {
+        .header {
+            font-size: 28px;
+        }
+        .description {
+            font-size: 16px;
+        }
+        .stButton > button {
+            font-size: 16px;
+            padding: 10px;
+        }
     }
     </style>
 """, unsafe_allow_html=True)
@@ -86,15 +103,16 @@ st.image("https://cdn.pixabay.com/photo/2016/11/22/07/09/cement-1846312_1280.jpg
 
 st.markdown("### 📋 Enter Concrete Mix Details:")
 
-# Input Fields
-cement = st.number_input('🧱 Cement (kg/m³)', min_value=0.0, max_value=1000.0, value=540.0)
-slag = st.number_input('⛏️ Blast Furnace Slag (kg/m³)', min_value=0.0, max_value=400.0, value=0.0)
-fly_ash = st.number_input('🌫️ Fly Ash (kg/m³)', min_value=0.0, max_value=200.0, value=0.0)
-water = st.number_input('💧 Water (kg/m³)', min_value=0.0, max_value=300.0, value=162.0)
-superplasticizer = st.number_input('🧪 Superplasticizer (kg/m³)', min_value=0.0, max_value=30.0, value=2.5)
-coarse_agg = st.number_input('🪨 Coarse Aggregate (kg/m³)', min_value=0.0, max_value=1200.0, value=1040.0)
-fine_agg = st.number_input('🏖️ Fine Aggregate (kg/m³)', min_value=0.0, max_value=1000.0, value=676.0)
-age = st.number_input('📅 Age (days)', min_value=1, max_value=365, value=28)
+# Input Fields inside a container for responsiveness
+with st.container():
+    cement = st.number_input('🧱 Cement (kg/m³)', min_value=0.0, max_value=1000.0, value=540.0)
+    slag = st.number_input('⛏️ Blast Furnace Slag (kg/m³)', min_value=0.0, max_value=400.0, value=0.0)
+    fly_ash = st.number_input('🌫️ Fly Ash (kg/m³)', min_value=0.0, max_value=200.0, value=0.0)
+    water = st.number_input('💧 Water (kg/m³)', min_value=0.0, max_value=300.0, value=162.0)
+    superplasticizer = st.number_input('🧪 Superplasticizer (kg/m³)', min_value=0.0, max_value=30.0, value=2.5)
+    coarse_agg = st.number_input('🪨 Coarse Aggregate (kg/m³)', min_value=0.0, max_value=1200.0, value=1040.0)
+    fine_agg = st.number_input('🏖️ Fine Aggregate (kg/m³)', min_value=0.0, max_value=1000.0, value=676.0)
+    age = st.number_input('📅 Age (days)', min_value=1, max_value=365, value=28)
 
 # Prediction Button
 if st.button('🚀 Predict Strength'):
