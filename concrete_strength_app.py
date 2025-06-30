@@ -128,7 +128,11 @@ if st.button('🚀 Predict Strength'):
 # Footer
 st.markdown("---")
 st.markdown("""
-    <div style='text-align: center; font-size: 16px;'>
-        Developed with ❤️ by Irfan Ullah Khan | <a href='https://github.com/programmarself/concrete_strength_predictor' target='_blank'>View on GitHub</a>
+     <div class="copyright">
+      <p>&copy; 2025 Advanced Python Programming & Applications | All rights reserved</p>
+      <p>By: <strong>Irfan Ullah Khan</strong></p>
+      <a href="https://www.linkedin.com/in/iukhan/" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/programmarself" target="_blank">GitHub</a> |
+      <a href="https://programmarself.github.io/My_Portfolio/" target="_blank">Portfolio</a>
     </div>
 """, unsafe_allow_html=True)
