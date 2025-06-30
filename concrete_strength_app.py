@@ -128,7 +128,7 @@ if st.button('🚀 Predict Strength'):
 # Footer
 st.markdown("---")
 st.markdown("""
-     <div class="copyright">
+     <div style='text-align: center; font-size: 16px;'>
       <p>&copy; 2025 Advanced Python Programming & Applications | All rights reserved</p>
       <p>By: <strong>Irfan Ullah Khan</strong></p>
       <a href="https://www.linkedin.com/in/iukhan/" target="_blank">LinkedIn</a> |
