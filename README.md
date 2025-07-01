@@ -1,8 +1,8 @@
 # 🏗️ Concrete Strength Predictor App
 
 This is a simple web application that predicts the compressive strength of concrete based on its mix components. It is built using Python, Machine Learning, and Streamlit.
+![Concrete Strength Prediction](https://github.com/user-attachments/assets/28cbab0f-451e-4c97-a818-9f9b070c5996)
 
-![concrete_strength_predictor](https://github.com/user-attachments/assets/2c09cf0b-e442-407f-8c29-45ed4865f2d1)
 
 ## 📊 Project Purpose
 The app allows users to input concrete mix details such as:
